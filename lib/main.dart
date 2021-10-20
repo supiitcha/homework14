@@ -122,13 +122,6 @@ class _HomePageState extends State<HomePage> {
                         child: Column(
                           children: [
                             Padding(
-                              padding: const EdgeInsets.only(top: 8.0),
-                              child: Text(
-                                "ปี",
-                                style: GoogleFonts.lato(fontSize: 16.0),
-                              ),
-                            ),
-                            Padding(
                               padding: const EdgeInsets.only(
                                   left: 8.0, right: 8.0, bottom: 20.0),
                               child: SpinBox(
@@ -139,11 +132,11 @@ class _HomePageState extends State<HomePage> {
                                 onChanged: (value) => setState(() {
                                   _year = value as int;
                                 }),
+                                decoration: InputDecoration(
+                                    labelText: 'ปี',
+                                    labelStyle: GoogleFonts.lato(fontSize: 30.0),
+                                ),
                               ),
-                            ),
-                            Text(
-                              "เดือน",
-                              style: GoogleFonts.lato(fontSize: 16.0),
                             ),
                             Padding(
                               padding: const EdgeInsets.only(left: 8.0, right: 8.0),
@@ -155,6 +148,10 @@ class _HomePageState extends State<HomePage> {
                                 onChanged: (value) => setState(() {
                                   _month = value as int;
                                 }),
+                                decoration: InputDecoration(
+                                  labelText: 'เดือน',
+                                  labelStyle: GoogleFonts.lato(fontSize: 30.0),
+                                ),
                               ),
                             ),
                             Padding(
