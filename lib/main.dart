@@ -98,10 +98,10 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       appBar: AppBar(
         title: Text("GUESS TEACHER'S AGE"),
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.purple
       ),
       body: Container(
-        color: Colors.amberAccent.shade200,
+        color: Colors.pinkAccent,
         child: Stack(
           children: [
             if(!_guessAge)
@@ -159,7 +159,7 @@ class _HomePageState extends State<HomePage> {
                               child: OutlinedButton(
                                 onPressed: guessClickButton,
                                 style: OutlinedButton.styleFrom(
-                                  backgroundColor: Colors.amberAccent,
+                                  backgroundColor: Colors.amberAccent
                                 ),
                                 child: Text("ทาย"),
                               ),
@@ -205,7 +205,7 @@ class _HomePageState extends State<HomePage> {
                   child: SizedBox(
                     width: 200.0,
                     height: 200.0,
-                    child: CircularProgressIndicator(color: Colors.white),
+                    child: CircularProgressIndicator(color: Colors.purple),
                   ),
                 ),
               ),
